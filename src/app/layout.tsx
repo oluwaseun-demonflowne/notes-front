@@ -20,7 +20,11 @@ export const metadata: Metadata = {
   title: "Minimal",
   description: "All your notes. Organized. Effortless.",
   openGraph: {
-    images: [{ url: "https://minimal.app/assets/images/image01.png" }]
+    images: [
+      {
+        url: "https://utfs.io/f/rPTSFWjsAVS8at96xpUT38lY6Jnsg2OCGiLmUBfypV5tz0Dv"
+      }
+    ]
   }
 };
 
