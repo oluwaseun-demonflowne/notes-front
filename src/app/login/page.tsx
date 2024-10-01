@@ -11,8 +11,8 @@ const Page = () => {
       <div className="flex w-[100%] flex-col justify-center gap-5 pt-14 md:h-auto md:w-[50%] md:pt-7">
         <div className="text-[22px] font-semibold">
           <h1>Hey, There</h1>
-          <h1>Start Sending Anonymous</h1>
-          <h1>messages here!</h1>
+          <h1>Start Creating Notes</h1>
+          <h1>and collobrate with friends!</h1>
         </div>
         <p className="text-[15px] font-medium text-slate-300">
           Enter your email address to use the app
