@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
-import { Oxanium } from "next/font/google";
+import localFont from "next/font/local";
+// import { Oxanium } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/shared/NavBar";
-const inter = Oxanium({ subsets: ["latin"] });
+// const inter = Oxanium({ subsets: ["latin"] });
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900"
-// });
+const geistSans = localFont({
+  src: "./fonts/Oxanium-Regular.ttf",
+  variable: "--font-geist-sans",
+  weight: "100 900"
+});
 // const geistMono = localFont({
 //   src: "./fonts/GeistMonoVF.woff",
 //   variable: "--font-geist-mono",
@@ -35,7 +35,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} px-4 pt-8 antialiased md:px-20`}>
+      {/* <body className={`${inter.className}`}> */}
+      <body className={`${geistSans.variable} font-brush`}>
         <NavBar />
         {children}
       </body>

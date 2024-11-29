@@ -1,20 +1,24 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { BiLogoMediumOld } from "react-icons/bi";
 import { GoDash } from "react-icons/go";
 import { MdCopyright } from "react-icons/md";
 
 const NavBar = () => {
+  const getPath = usePathname();
+  if (getPath === "/profile") return null;
   return (
-    <div className="flex justify-between items-center text-white">
+    <div className="flex items-center justify-between px-4 pt-8 text-white md:px-20">
       <Link href="/">
-      <div className="flex items-center">
-        <BiLogoMediumOld className="text-3xl" />
-        <div className="flex">
-          <p className="text-xl font-semibold">Minimal</p>
-          <MdCopyright className="text-[14px]" />
+        <div className="flex items-center">
+          <BiLogoMediumOld className="text-3xl" />
+          <div className="flex">
+            <p className="text-xl font-semibold">Minimal</p>
+            <MdCopyright className="text-[14px]" />
+          </div>
         </div>
-      </div>
       </Link>
       <div className="flex gap-5">
         <button>

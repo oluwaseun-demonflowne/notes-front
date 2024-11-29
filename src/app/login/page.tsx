@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Page = () => {
   return (
-    <div className="flex gap-16 h-[85vh] md:pb-0 pb-10  px-4 text-white md:px-20">
+    <div className="flex h-[85vh] gap-16 px-4 pb-10 text-white md:px-20 md:pb-0">
       <div className="flex w-[100%] flex-col justify-center gap-5 pt-14 md:h-auto md:w-[50%] md:pt-7">
         <div className="text-[22px] font-semibold">
           <h1>Hey, There</h1>
@@ -21,10 +21,10 @@ const Page = () => {
           <input
             type="email"
             required
-            className="h-12 w-[100%] rounded-full text-white border border-[#c9c9c9] bg-[#2a2a2a] pl-6 text-sm md:h-10"
+            className="h-12 w-[100%] rounded-full border border-[#c9c9c9] bg-[#2a2a2a] pl-6 text-sm text-white md:h-10"
             placeholder="Learning group@gmail.com"
           />
-          <button className="h-12 w-[100%] rounded-full  bg-[#312eb5] pl-4 text-sm text-white md:h-10">
+          <button className="h-12 w-[100%] rounded-full bg-[#312eb5] pl-4 text-sm text-white md:h-10">
             Sign in with Email
           </button>
         </form>
